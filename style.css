@@ -1,0 +1,178 @@
+body {
+  background: beige;
+}
+
+.left{
+  float: inline-end;
+  padding-left: 150px;
+  width: 10%;
+  height: 15%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+
+.right {
+  float: inline-start;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  width: 8%;
+  height: 8%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+
+.extra {
+  float: inline-start;
+  padding-top: 100px;
+  padding-left: 200px;
+  width: 15%;
+  height: 8%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+.extraExtra {
+  float: inline-end;
+  padding-right: 200px;
+  padding-bottom:300px;
+  width: 5%;
+  height: 8%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+@keyframes opacityOn {
+  0% {
+      opacity: 1;
+  }
+  25% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  75% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* img.imgHeader{
+  width: 8%;
+  height: 8%;
+} */
+.title {
+  font-family: 'Oswald', serif;
+  font-size: 12vh;
+  text-align: left;
+  padding-left: 40px;
+  color: black;
+
+}
+
+.intro {
+  font-family: 'Lato', sans-serif;
+  padding: 40px;
+  font-size: 4vh;
+}
+
+.titleWords {
+  margin: 0px;
+}
+
+.empty{
+  font-size: 15vh;
+}
+
+.walls {
+  font-size: 7vh;
+}
+.wrap {
+  text-align:left;
+  display: inline-block;
+}
+
+.buttons{
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+
+.sort{
+  font-family: 'Lato', sans-serif ;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+.sort-abc{
+  margin-right: 10px;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold;
+}
+.sort-birth{
+  margin-right: 10px;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold;
+}
+
+.sort-purchase{
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold;
+}
+.sort-title{
+  margin-right: 10px;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold;
+}
+.waffle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .paint {
+    /* width: 40px;
+    height: 50px; */
+    margin: 2px;
+  }
+
+  .tip{	
+    position: absolute;
+    font: 12px;	
+    font-family: 'Lato', sans-serif;	
+    border: 1pt solid #ced4da;		
+    pointer-events: none;	
+    margin: 0 auto;		
+    background-color: white;
+    padding: 2px 10px 10px 10px;
+}
+
+.tipText {
+  color: #495057;
+  margin: 5px;
+  pointer-events: none;	
+}
+
+.tipDate {
+  font-style: italic;
+  font-size: x-small;
+  font-weight: 200;
+  pointer-events: none;	
+}
+
+.breakLine {
+  background-color: #ced4da;
+  height: 1px;
+  border: 0;
+}
+
+.men {
+  color: #b14aed;
+  font-weight: bold;
+}
+
+.women {
+  color: #14F5B2;
+  font-weight: bold;
+}
