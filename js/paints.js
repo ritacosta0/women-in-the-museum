@@ -27,7 +27,7 @@ d3.csv("../data/tate-art.csv")
         tooltip.transition().duration(200).style("opacity", 1);
         tooltip
           .html(
-            "<h2 class = 'tip-text'>" +
+            "<h2 class = 'tip-text'>"+
               d.artist +
               "<span class = 'tip-text tip-date'>" +
               d.dates +
