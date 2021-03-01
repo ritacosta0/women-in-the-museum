@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>Empty museum walls</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    </link>
+    <script type="module" src="../js/paints.js"> </script>
+    <script type="module" src="../js/barChart.js"> </script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap" rel="stylesheet">
+    <script
+        src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <div class="wrap">
+            <p class="titleWords empty">EMPTY </p>
+            <p class="titleWords museum">MUSEUM </p>
+            <p class="titleWords walls">WALLS </p>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Empty-frame.png" class="imgHeader left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png"
+            class="imgHeader extraExtra">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Picture_frame_leaves_stainedglass_03.png"
+            class="imgHeader right">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Empty-frame.png" class="imgHeader extra"> -->
+
+    </div>
+    <p class="intro">Of all the art in the Tate Museum, only <span class="number">2%</span> was made by women. Data regarding the museum collection until 2014 shows that from more than 50,000 artworks up for exhibtion, only less than a thousand are authored by female artists. </p> 
+    <div class="chart-aligner"><figure class="chart"> </figure></div>
+    <p class="intro">If women's artwork were removed from the museum it wouldn't make much difference. But if those paintings and sculptures were the only thing left the walls would feel empty. Explore que collection below.</p>
+    <!-- <p class="intro">From a
+        total of <span class="number">1364</span> artist catalogued by the museum, only <span class="number">115</span>
+        are women. Whom, on average, have <span class="number">eight</span> of their artworks exhibited in the museum.
+        While their male counterparts have around <span class="number">42</span></p> -->
+    <!-- <p class="intro"> Explore the artworks in the museum and see how collection would look like if all the works from
+        <span class="men">men</span> were removed and only <span class="women">women's</span> remained.</p> -->
+
+    <div class="row">
+        <div class="button-menu">
+            <div class="column toggle"> See how the collection would look like with women-only and men-only art
+                <div class="toggleButton"> 
+                    <button class="button all-button switch">All</button><button class="button women-only-button switch">Women</button><button class="button women-only-button switch">Men</button>
+                </div>
+            </div>
+            <div class="column search-text"> Search for an artist...
+                <input id="myInput" type="text" class="searchButton">
+            </div>
+            <button class="reset">Reset</button>
+            <div class="column sort-drop"> Or sort by...
+                <div class="buttons">
+                    <button class="sort-abc button">Artist name</button>
+                    <button class="sort-birth button">Artist birth year</button>
+                    <button class="sort-gender button">Artist gender</button>
+                    <button class="sort-title button">Artwork title</button>
+                    <button class="sort-purchase button">Artwork purchase year</button>
+                </div>
+            </div>
+        </div>
+        <figure class="column waffle"></figure>
+    </div>
+</body>
+
+</html>

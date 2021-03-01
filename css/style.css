@@ -1,0 +1,391 @@
+body {
+  background: beige;
+}
+
+.left {
+  float: inline-end;
+  padding-left: 150px;
+  width: 10%;
+  height: 15%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+
+.right {
+  float: inline-start;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  width: 8%;
+  height: 8%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+
+.extraExtra {
+  float: inline-end;
+  padding-right: 200px;
+  padding-bottom: 300px;
+  width: 5%;
+  height: 8%;
+  animation: opacityOn 5s normal forwards infinite;
+  animation-delay: 1s;
+}
+@keyframes opacityOn {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* img.imgHeader{
+  width: 8%;
+  height: 8%;
+} */
+.title {
+  font-family: "Oswald", serif;
+  font-size: 12vh;
+  text-align: left;
+  padding-left: 40px;
+  color: black;
+}
+
+.intro {
+  font-family: "Lato", sans-serif;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.titleWords {
+  margin: 0px;
+}
+
+.empty {
+  font-size: 15vh;
+}
+
+.walls {
+  font-size: 7vh;
+}
+
+.wrap {
+  text-align: left;
+  display: inline-block;
+}
+
+.sort {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.sort-abc {
+  margin-right: 10px;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 500;
+}
+.sort-birth {
+  margin-right: 10px;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 500;
+}
+
+.sort-purchase {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 500;
+}
+.sort-title {
+  margin-right: 10px;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 500;
+}
+
+.sort-gender {
+  margin-right: 10px;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 500;
+}
+
+.waffle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
+
+.paint,
+.myPaint {
+  /* width: 40px;
+    height: 50px; */
+  margin: 2px;
+}
+
+.tip {
+  position: absolute;
+  font: 12px;
+  font-family: "Lato", sans-serif;
+  border: 1pt solid #ced4da;
+  pointer-events: none;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2px 10px 10px 10px;
+}
+
+.tipText {
+  color: #495057;
+  margin: 5px;
+  pointer-events: none;
+}
+
+.tipDate {
+  font-style: italic;
+  font-size: x-small;
+  font-weight: 200;
+  pointer-events: none;
+}
+
+.breakLine {
+  background-color: #ced4da;
+  height: 1px;
+  border: 0;
+}
+
+.men {
+  color: #b14aed;
+  font-weight: 500;
+}
+
+.women {
+  color: #14f5b2;
+  font-weight: 500;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30%;
+  margin-right: 29%;
+}
+
+.chart-aligner {
+  width: 100%;
+  text-align: center;
+}
+
+.number {
+  font-weight: 700;
+}
+
+.yaxis > .domain {
+  opacity: 0;
+}
+.yaxis > .tick > line {
+  opacity: 0;
+}
+
+.yaxis > .tick > text,
+.domain,
+.tick {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+}
+
+.toggleView {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.toggleButton {
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-text,
+.sort-drop,
+.toggle {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.button-menu {
+  flex-direction: column;
+  padding-top: 2%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2em;
+  width: 15%;
+}
+
+input {
+  border: solid #495057 1px;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 0.7em;
+  font-family: "Lato", sans-serif;
+}
+
+.button {
+  font-family: "Lato", sans-serif;
+  border: solid #495057 1px;
+  border-radius: 2px;
+}
+.active,
+.button:hover {
+  background-color: #666;
+  color: white;
+}
+.women-only-button,
+.all-button {
+  margin: 0;
+}
+.all-button {
+  border-radius: 2px 0px 0px 2px;
+}
+.women-only-button {
+  border-radius: 0px 2px 2px 0px;
+  border-left: 0;
+}
+.button {
+  font-size: medium;
+}
+.reset {
+  font-style: italic;
+  border: 0;
+  background-color: beige;
+  margin-bottom: 10%;
+  text-align: left;
+  padding-left: 0;
+}
+
+/* autocomplete list */
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  width: 15%;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em !important;
+  font-weight: 200 !important;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  width: 45px;
+  align-items: center;
+}
+
+.block {
+  width: 15px;
+  order: 1;
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left:27%;
+  font-family: "Lato", sans-serif;
+}
+.count {
+  order: 0;
+  font-family: "Lato", sans-serif;
+}
+.count-men {
+  padding-left: 100%;
+}
+.count-women {
+  padding-left: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .button-menu {
+    flex-direction: row;
+    padding-top: 2%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    width: 80%;
+    align-self: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .sort-drop {
+    padding-bottom: 5%;
+    border-bottom: 1px black solid;
+  }
+  .tick {
+    color: #585858;
+    font-family: "Lato", sans-serif;
+    font-size: 3em;
+  }
+  .extraExtra,
+  .left,
+  .right {
+    width: 0%;
+    height: 0%;
+    padding: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+  .chart {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .label {
+    position: absolute;
+    left:12%;
+    font-family: "Lato", sans-serif;
+  }
+}
