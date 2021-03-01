@@ -22,50 +22,51 @@
 <body>
     <div class="title">
         <div class="wrap">
-            <p class="titleWords empty">EMPTY </p>
-            <p class="titleWords museum">MUSEUM </p>
-            <p class="titleWords walls">WALLS </p>
+            <p class="title-words empty">EMPTY </p>
+            <p class="title-words museum">MUSEUM </p>
+            <p class="title-words walls">WALLS </p>
         </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Empty-frame.png" class="imgHeader left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Empty-frame.png" class="img-title left-frame">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Jacques-louis_david%2C_marte_disarmato_da_venere%2C_1824%2C_picture_frame.png"
-            class="imgHeader extraExtra">
+            class="img-title center-frame">
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Picture_frame_leaves_stainedglass_03.png"
-            class="imgHeader right">
-        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Empty-frame.png" class="imgHeader extra"> -->
-
+            class="img-title right-frame">
     </div>
-    <p class="intro">Of all the art in the Tate Museum, only <span class="number">2%</span> was made by women. Data regarding the museum collection until 2014 shows that from more than 50,000 artworks up for exhibtion, only less than a thousand are authored by female artists. </p> 
-    <div class="chart-aligner"><figure class="chart"> </figure></div>
-    <p class="intro">If women's artwork were removed from the museum it wouldn't make much difference. But if those paintings and sculptures were the only thing left the walls would feel empty. Explore que collection below.</p>
-    <!-- <p class="intro">From a
-        total of <span class="number">1364</span> artist catalogued by the museum, only <span class="number">115</span>
-        are women. Whom, on average, have <span class="number">eight</span> of their artworks exhibited in the museum.
-        While their male counterparts have around <span class="number">42</span></p> -->
-    <!-- <p class="intro"> Explore the artworks in the museum and see how collection would look like if all the works from
-        <span class="men">men</span> were removed and only <span class="women">women's</span> remained.</p> -->
-
-    <div class="row">
-        <div class="button-menu">
-            <div class="column toggle"> See how the collection would look like with women-only and men-only art
-                <div class="toggleButton"> 
-                    <button class="button all-button switch">All</button><button class="button women-only-button switch">Women</button><button class="button women-only-button switch">Men</button>
+    <div class="intro-styles">
+        <p class="intro">Of all the art in the Tate Museum, only <span class="number">2%</span> was made by women. Data
+            regarding the museum collection until 2014 shows that from more than 50,000 artworks up for exhibtion, only
+            less
+            than a thousand are authored by female artists. </p>
+        <figure class="chart"> </figure>
+        <p class="intro second-paragraph">If women's artwork were removed from the museum it wouldn't make much
+            difference.
+            But if those paintings and sculptures were the only thing left the walls would feel empty. Explore que
+            collection below.</p>
+        <div class="row">
+            <div class="button-menu">
+                <div class="column toggle"> See how the collection would look like with women-only and men-only art
+                    <div class="toggleButton">
+                        <button class="button all-button switch">All</button><button
+                            class="button women-only-button switch">Women</button><button
+                            class="button women-only-button switch">Men</button>
+                    </div>
+                </div>
+                <div class="column search-text"> Search for an artist...
+                    <input id="text-input" type="text">
+                </div>
+                <button class="reset">Reset</button>
+                <div class="column sort-drop"> Or sort by...
+                    <div class="buttons">
+                        <button class="sort-abc button">Artist name</button>
+                        <button class="sort-birth button">Artist birth year</button>
+                        <button class="sort-gender button">Artist gender</button>
+                        <button class="sort-title button">Artwork title</button>
+                        <button class="sort-purchase button">Artwork purchase year</button>
+                    </div>
                 </div>
             </div>
-            <div class="column search-text"> Search for an artist...
-                <input id="myInput" type="text" class="searchButton">
-            </div>
-            <button class="reset">Reset</button>
-            <div class="column sort-drop"> Or sort by...
-                <div class="buttons">
-                    <button class="sort-abc button">Artist name</button>
-                    <button class="sort-birth button">Artist birth year</button>
-                    <button class="sort-gender button">Artist gender</button>
-                    <button class="sort-title button">Artwork title</button>
-                    <button class="sort-purchase button">Artwork purchase year</button>
-                </div>
-            </div>
+            <figure class="column waffle"></figure>
         </div>
-        <figure class="column waffle"></figure>
     </div>
 </body>
 

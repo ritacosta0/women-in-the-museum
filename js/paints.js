@@ -27,15 +27,15 @@ d3.csv("../data/tate-art.csv")
         tooltip.transition().duration(200).style("opacity", 1);
         tooltip
           .html(
-            "<h2 class = 'tipText'>" +
+            "<h2 class = 'tip-text'>" +
               d.artist +
-              "<span class = 'tipText tipDate'>" +
+              "<span class = 'tip-text tip-date'>" +
               d.dates +
               "</span>" +
               "</h2>" +
               "<p>" +
-              "<hr class = 'breakLine'>" +
-              "<h4 class = 'tipText'>" +
+              "<hr class = 'breakline'>" +
+              "<h4 class = 'tip-text'>" +
               d.title +
               "</h4>" +
               "<img class = 'img' src=" +
@@ -122,7 +122,7 @@ d3.csv("../data/tate-art.csv")
       }
     });
 
-    d3.selectAll(".searchButton").on("keyup", function (d) {
+    d3.selectAll("#text-input").on("keyup", function (d) {
       const searchPaint = this.value;
       if (names.includes(this.value)) {
         const dataFilter = data.filter(function (d) {
@@ -144,15 +144,15 @@ d3.csv("../data/tate-art.csv")
             tooltip.transition().duration(200).style("opacity", 1);
             tooltip
               .html(
-                "<h2 class = 'tipText'>" +
+                "<h2 class = 'tip-text'>" +
                   d.artist +
-                  "<span class = 'tipText tipDate'>" +
+                  "<span class = 'tip-text tip-date'>" +
                   d.dates +
                   "</span>" +
                   "</h2>" +
                   "<p>" +
-                  "<hr class = 'breakLine'>" +
-                  "<h4 class = 'tipText'>" +
+                  "<hr class = 'breakline'>" +
+                  "<h4 class = 'tip-text'>" +
                   d.title +
                   "</h4>" +
                   "<img class = 'img' src=" +
@@ -196,15 +196,15 @@ d3.csv("../data/tate-art.csv")
           tooltip.transition().duration(200).style("opacity", 1);
           tooltip
             .html(
-              "<h2 class = 'tipText'>" +
+              "<h2 class = 'tip-text'>" +
                 d.artist +
-                "<span class = 'tipText tipDate'>" +
+                "<span class = 'tip-text tip-date'>" +
                 d.dates +
                 "</span>" +
                 "</h2>" +
                 "<p>" +
-                "<hr class = 'breakLine'>" +
-                "<h4 class = 'tipText'>" +
+                "<hr class = 'break-line'>" +
+                "<h4 class = 'tip-text'>" +
                 d.title +
                 "</h4>" +
                 "<img class = 'img' src=" +
@@ -230,7 +230,7 @@ d3.csv("../data/tate-art.csv")
       });
     }
 
-    autocomplete(document.getElementById("myInput"), names);
+    autocomplete(document.getElementById("text-input"), names);
   })
 
   .catch(function (error) {
