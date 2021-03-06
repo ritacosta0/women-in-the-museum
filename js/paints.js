@@ -1,8 +1,8 @@
 import { autocomplete } from "./autocomplete.js";
 
-d3.csv("/data/tate-art.csv")
+d3.csv("data/tate-art.csv")
   .then(function (data) {
-    
+
     const waffle = d3.select(".waffle");
     const tooltip = d3
       .select("body")
