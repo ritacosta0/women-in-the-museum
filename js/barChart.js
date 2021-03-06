@@ -1,5 +1,6 @@
 d3.csv("/data/gender-count.csv")
   .then(function (data) {
+    
     const scaleX = d3.scaleLinear().range([0, 100]).domain([0, 54000]);
 
     const bar = d3.select(".chart");
