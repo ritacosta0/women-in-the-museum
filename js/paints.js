@@ -1,6 +1,6 @@
 import { autocomplete } from "./autocomplete.js";
 
-d3.csv("../data/tate-art.csv")
+d3.csv("data/tate-art.csv")
   .then(function (data) {
     console.log(data);
     const waffle = d3.select(".waffle");

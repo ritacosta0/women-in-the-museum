@@ -1,4 +1,4 @@
-d3.csv("../data/gender-count.csv")
+d3.csv("data/gender-count.csv")
   .then(function (data) {
     // create a Y scale for the data
     const scaleX = d3.scaleLinear().range([0, 100]).domain([0, 54000]);
