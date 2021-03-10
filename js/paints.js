@@ -218,12 +218,12 @@ d3.csv("data/tate-art.csv")
         });
     });
 
-    var button = d3.selectAll(".button");
+    const button = d3.selectAll(".button");
 
     // Loop through the buttons and add the active class to the current/clicked button
-    for (var i = 0; i < button.length; i++) {
+    for (const i = 0; i < button.length; i++) {
       button[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
+        const current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
       });
